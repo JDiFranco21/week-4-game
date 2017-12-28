@@ -6,5 +6,9 @@
     width: 75%;
     height: 75%;
     border:grey;
+}
 
+.crystal-image {
+    height: 100px;
+    width: 100px;
 }

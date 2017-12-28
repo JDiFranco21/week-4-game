@@ -2,53 +2,43 @@
 <html>
 <head>
 
-  <title>simple crystal game</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="assets/javascript/game.js"></script>
 
-  <link rel=“stylesheet” type=“text/css” href=“assets/css/style.css”>
-  <script src=“https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js“></script>
-  <script type=“text/javascript” src=“assets/javascript/game.js”></script>
+  <title>Crystal Game</title>
 
 </head>
 
-
 <body>
 
-  <div class="box center">Crystal Collector</div>
+  <h1>
+    <div class="box center">Crystals Collector</div>
+  </h1>
 
-  <div class="game-explination">
-
-  <p>
-    You will be given a random number at the start of the game.
-   <br><br>
-   There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.
-   <br><br>
-   You win the game by matching your total score to random number. You lose the game if your total score goes above the random number.
-   <br><br>
-   The value of each crystal is hidden from you until you click on it.
-   <br><br>
-   When the game restarts the value of the crystals resets.
-  </p>
-
+  <div class="box explanation">
+    You will be given a random number when the game begins.
+    <br><br>
+    There are four crystals below. Clicking on a crystal adds a specific amount of points to your total score.
+    <br><br>
+    You win the game by matching your total score to random number. You lose the game if your total score goes above the random number.
+    <br><br>
+    The value of each crystal is unknown until you click  it.
+    <br><br>
+    The value of the crystals resets when the game restarts.
   </div>
 
+  <!-- Div boxes initially empty but will be filled dynamically -->
 
-  <div id="targetNumber">Trget Number</div>
+  <div id="targetNumber" class="box center"></div>
 
-  <div id = "winsLosses">winsLosses</div>
+  <div id="winsLosses" class="box center"></div>
 
-  <div class = "crystals">blueSky</div>
+  <div class="crystals box center"></div>
 
+  <div id="scoreIs" class="box center">Your total score is: </div>
 
-  <div id = "scoreIs">Your total score is:</div>
-
-  <div id = "totalScore">totalScore</div>
-
-  <div id="crystals"></div>
+  <div id="score" class="box center"></div>
 
 </body>
-
 </html>
-
-
-
-
